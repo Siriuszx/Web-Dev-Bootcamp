@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Forms</h1>
 
     <form action="/tacos">
-        <input type="text" placeholder="username">
-        <input type="password" placeholder="enter your password">
-        <input type="color">
-        <input type="month">
-        <input type="number" placeholder="enter a number">
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input id="username" type="text" placeholder="username">
+        </p>
+        <p>
+            <label for="pass">Please enter password:</label>
+            <input id="pass" type="password" placeholder="enter your password">
+        </p>
+        <p>
+            <label for="color">Enter a Color:</label>
+            <input id="color" type="color">
+        </p>
+        <p>
+            <label for="num">
+                Enter a Number:
+                <input id="num" type="number" placeholder="enter a number">
+            </label>
+        </p>
     </form>
 </body>
+
 </html>
