@@ -12,9 +12,10 @@
     <h1>Forms</h1>
 
     <form action="/tacos">
+        <button type="button">Please do not submit</button>
         <p>
             <label for="username">Enter a Username:</label>
-            <input id="username" type="text" placeholder="username">
+            <input id="username" type="text" placeholder="username" name="username">
         </p>
         <p>
             <label for="pass">Please enter password:</label>
@@ -27,9 +28,72 @@
         <p>
             <label for="num">
                 Enter a Number:
-                <input id="num" type="number" placeholder="enter a number">
+                <input id="num" type="number" min="1" max="100" placeholder="enter a number">
             </label>
         </p>
+        <button>Submit</button>
+        <input type="button" value="click me">
+    </form>
+    <h2>Name attribute</h2>
+    <form action="https://www.reddit.com/search">
+        <h3>Reddit Search</h3>
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+    <form action="https://www.google.com/search">
+        <h3>Google Search</h3>
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <h3>Search YouTube</h3>
+        <input type="text" name="search_query">
+        <button>Search YouTube</button>
+    </form>
+
+    <h2>More inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="tos" id="tos" checked>
+        <label for="tos">I agree to everything</label>
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="small">Small:</label>
+            <input type="radio" name="size" id="small" value="s">
+            <label for="medium">Medium:</label>
+            <input type="radio" name="size" id="medium" value="m">
+        </p>
+        <p>
+            <label for="meal_type">Please select a meal type: </label>
+            <select name="meal" id="meal_type">
+                <option value="">-- Please choose an option --</option>
+                <option value="pasta">Pasta</option>
+                <option value="sandwich">Sandwich</option>
+                <option value="soup" selected>Soup</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of cheese:</label>
+            <input type="range" min="0" max="3" value="2" id="cheese" name="cheese_amnt">
+        </p>
+        <p>
+            <label for="reuqests">Any special requests?</label>
+            <textarea name="" id="reuqests" cols="" rows="5" placeholder="Type requests here..."></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+    <form action="">
+        <h3>Submit dummy</h3>
+        <label for="dummy">First name:</label>
+        <input type="text" name="" id="dummy" minlength="5" maxlength="15" required>
+        <p>
+            <label for="dummy_username">Username</label>
+            <input type="text" name="" id="dummy_username" required>
+        </p>
+        <p>
+            <input type="email" name="" id="" required>
+        </p>
+        <button>Submit</button>
     </form>
 </body>
 

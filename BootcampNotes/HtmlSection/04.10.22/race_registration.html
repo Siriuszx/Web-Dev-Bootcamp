@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Race Registration!</h1>
+    <form action="/reg_user">
+        <div>
+            <label for="first_name">First Name</label>
+            <input type="text" name="name" id="first_name" required>
+
+            <label for="last_name">Last Name</label>
+            <input type="text" name="name" id="last_name" required>
+        </div>
+        <div>
+            <p>Select a Race:</p>
+            <div>
+                <input type="radio" name="race_type" id="race_5k" value="5k">
+                <label for="race_5k">Fun Run 5k</label>
+            </div>
+            <div>
+                <input type="radio" name="race_type" id="race_half" value="half">
+                <label for="race_half">Half Marathon</label>
+            </div>
+            <div>
+                <input type="radio" name="race_type" id="race_full" value="full">
+                <label for="race_full">Full Marathon</label>
+            </div>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="login" id="email" required>
+
+            <label for="pass">Password</label>
+            <input type="password" name="login" id="pass" required>
+        </div>
+        <div>
+            <label for="age">Select Age Group</label>
+            <select name="select_age" id="age">
+                <option value="under 18">under 18</option>
+                <option value="18-30">18-30</option>
+                <option value="30-50">30-50</option>
+                <option value="50+">50+</option>
+            </select>
+        </div>
+        <button>Register!</button>
+        <!-- Output of my form: "http://127.0.0.1:5500/reg_user?name=first&name=last&race_type=5k&login=email%40gmail.com&login=123123&select_age=18-30" -->
+    </form>
+</body>
+
+</html>
