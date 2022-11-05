@@ -1,0 +1,20 @@
+h2 {
+    color: #5ffcfc;
+}
+
+h3 {
+    color: indigo;
+}
+
+button {
+    color: rgb(255, 0, 0);
+    background-color: cyan;
+}
+
+p {
+    color: olive;
+}
+
+body {
+    background-color: #fff;
+}
