@@ -1,0 +1,30 @@
+img {
+    display: inline-block;
+    width: 30%;
+    margin: calc(10%/6);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+img:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 10px 20px -10px rgba(0,0,0,0.75);
+}
+
+::selection {
+    color: grey;
+}
+
+nav {
+    width: 30%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-left: calc(10%/6);
+    padding: 1.2em 0;
+    border-bottom: 2px solid grey;
+}
+
+hr {
+    width: calc(90%+calc(10%/6));
+}
+

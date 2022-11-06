@@ -1,0 +1,24 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+section {
+    width: 80%;
+    height: 800px;
+    background-color: magenta;
+    margin: 0 auto; 
+    background: center/cover no-repeat url(https://images.unsplash.com/photo-1667623656635-fdf814e6c70e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+}
+
+h1 {
+    font-size: 100px;
+    margin-bottom: 0;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
