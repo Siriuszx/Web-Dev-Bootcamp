@@ -20,5 +20,12 @@ body {
     color: #ea1c2c;
 }
 
+#hand-pic {
+    background-image: url(imgs/hand2.png);
+    height: 300px;
+    width: 50%;
+    background-size: cover;
+}
+
 
  
