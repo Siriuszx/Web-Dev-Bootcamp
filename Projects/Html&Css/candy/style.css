@@ -4,7 +4,7 @@ body {
 }
 
 #mainNavbar {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 100;
 }
 
@@ -25,6 +25,44 @@ body {
     height: 300px;
     width: 50%;
     background-size: cover;
+}
+
+#heading-group span {
+    color: red;
+}
+
+#heading-group h1 {
+    font-weight: 100;
+}
+
+.candy-type {
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+.candy-type h2 {
+    color: #EA1C2C;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.candy-type p {
+    color: #f498b8;
+    width: 60%;
+}
+
+.img-icon {
+    width: 100px;
+}
+
+@media (max-width: 768px) {
+    .candy-type h2 {
+        font-size: 1rem;
+    }
+    .img-icon {
+        display: none;
+    }
 }
 
 
