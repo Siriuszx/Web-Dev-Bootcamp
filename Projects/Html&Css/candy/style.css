@@ -6,6 +6,7 @@ body {
 #mainNavbar {
     font-size: 1.3rem;
     font-weight: 100;
+    background-color: rgba(255, 255, 255,0.5);
 }
 
 #mainNavbar .nav-link {
@@ -63,6 +64,7 @@ body {
     .img-icon {
         display: none;
     }
+    
 }
 
 
