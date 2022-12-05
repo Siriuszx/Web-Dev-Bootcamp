@@ -1,8 +1,12 @@
+
+//Game data
 let randNum = Math.trunc(Math.random() * 20);
 let curScore = 20;
 let playerHighscore = 0;
 let guessNum = 0;
+//
 
+//Game higherOrLower, update score, give player TIP
 function higherOrLower(guessNum) {
 
     if ((guessNum - randNum) > 0) {
