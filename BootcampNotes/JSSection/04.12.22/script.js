@@ -1,19 +1,21 @@
-//DOM data
 let DOMHighscore = document.querySelector('.highscore');
 let DOMCurScore = document.querySelector('.score');
 let DOMScoreInput = document.querySelector('.guess');
 let DOMStatusMSG = document.querySelector('.message');
 let DOMRandNumStatusMSG = document.querySelector('.number');
 let DOMBodyElement = document.querySelector('body');
-//
-//Game data
+
 let randNum = 0;
 let curScore = 0;
 let playerHighscore = 0;
 let guessNum = 0;
-//
 
-//TODO don't update after player's win
+function setRndNum() {
+    do {
+        randNum = Math.trunc(Math.random() * 20);
+    } while (randNum == 0)
+}
+
 function updateGame(guessNum) {
     if ((guessNum - randNum) > 0) {
         curScore--;
@@ -36,7 +38,7 @@ function updateGame(guessNum) {
 
 function validateScoreInput() {
     let inputNum = Number(DOMScoreInput.value);
-    
+
     if (curScore > 0) {
         if (typeof (inputNum) == 'number' && inputNum != 0) {
             updateGame(inputNum);
@@ -57,13 +59,7 @@ function newGame() {
     DOMStatusMSG.textContent = 'Start guessing...';
 }
 
-function setRndNum() {
-    do {
-        randNum = Math.trunc(Math.random() * 20);
-    } while (randNum == 0)
-}
 
 newGame()
 document.querySelector('.again').addEventListener('click', newGame);
 document.querySelector('.check').addEventListener('click', validateScoreInput);
-console.log(randNum);
